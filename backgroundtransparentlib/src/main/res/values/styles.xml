@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BackgroundTransparentLayout">
+        <attr name="radius" format="dimension"/>
+        <attr name="quadrant">
+            <flag name="all" value="15" />
+            <flag name="topRight" value="1" />
+            <flag name="topLeft" value="2" />
+            <flag name="bottomLeft" value="4" />
+            <flag name="bottomRight" value="8" />
+        </attr>
+    </declare-styleable>
+</resources>
