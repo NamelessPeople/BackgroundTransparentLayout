@@ -79,22 +79,22 @@ public class BackgroundTransparentLayout extends RelativeLayout {
             canvas.drawRoundRect(roundRect, radius, radius, mPaint);
         } else {
             float[] radii = new float[8];
-            if (quadrant >= bottomRight) {
+            if ((quadrant & bottomRight) == bottomRight) {
                 //右下
                 radii[4] = radius;
                 radii[5] = radius;
             }
-            if (quadrant % bottomRight >= bottomLeft) {
+            if ((quadrant & bottomLeft) == bottomLeft) {
                 //左下
                 radii[6] = radius;
                 radii[7] = radius;
             }
-            if (quadrant % bottomLeft >= topLeft) {
+            if ((quadrant & topLeft) == topLeft) {
                 //左上
                 radii[0] = radius;
                 radii[1] = radius;
             }
-            if (quadrant % topLeft == topRight) {
+            if ((quadrant & topRight) == topRight) {
                 //右上
                 radii[2] = radius;
                 radii[3] = radius;
