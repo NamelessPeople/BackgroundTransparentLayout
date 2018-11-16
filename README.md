@@ -1,7 +1,7 @@
 BackgroundTransparentLayout
 ==============================================================
 
-![image]()
+![](https://github.com/NamelessPeople/BackgroundTransparentLayout/blob/master/pic/shootscreen.jpg)
 
 #example
 
@@ -21,7 +21,7 @@ BackgroundTransparentLayout
     </com.github.namelesspeople.backgroundtransparentlib.BackgroundTransparentLayout>
 
 	1.默认是圆角矩形，4个角都存在
-  2.将子布局边角遮盖
+	2.将子布局边角遮盖
 	3.quadrant有 topRight topLeft bottomLeft bottomRight四个方向上任意组合
 	4.radius 任意圆角大小
 
