@@ -9,8 +9,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.os.Build;
-
 import android.util.AttributeSet;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import androidx.annotation.Nullable;
  * 类描述：
  *
  * @author ：无名之辈
- * @date ：2018/11/16
+ * @date ：2020/6/1
  */
-public class BackgroundTransparentLayout extends RelativeLayout {
+public class BackgroundTransparentLinearLayout extends LinearLayout {
     private float radius = 10;
     private RectF roundRect;
     private Paint mPaint;
@@ -34,15 +34,15 @@ public class BackgroundTransparentLayout extends RelativeLayout {
     protected final int bottomRight = 8;
     protected final int all = 15;
 
-    public BackgroundTransparentLayout(@NonNull Context context) {
+    public BackgroundTransparentLinearLayout(@NonNull Context context) {
         this(context, null);
     }
 
-    public BackgroundTransparentLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public BackgroundTransparentLinearLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public BackgroundTransparentLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public BackgroundTransparentLinearLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
