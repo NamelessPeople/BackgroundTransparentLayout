@@ -36,7 +36,7 @@ BackgroundTransparentLayout
 	}
 
 	dependencies {
-	        implementation 'com.github.NamelessPeople:BackgroundTransparentLayout:1.1'
+		implementation 'com.github.NamelessPeople:BackgroundTransparentLayout:1.2.0'
 	}
 
 
