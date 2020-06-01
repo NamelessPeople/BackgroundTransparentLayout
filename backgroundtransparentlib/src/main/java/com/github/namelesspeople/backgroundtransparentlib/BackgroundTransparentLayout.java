@@ -118,4 +118,12 @@ public class BackgroundTransparentLayout extends RelativeLayout {
         final float scale = getContext().getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
+
+    public void setQuadrant(int quadrant) {
+        this.quadrant = quadrant;
+    }
+
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
 }
